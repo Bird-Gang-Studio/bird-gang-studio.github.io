@@ -106,6 +106,14 @@ section > * { max-width: var(--max); margin-left: auto; margin-right: auto; }
   .nav nav a { padding: 10px 8px; font-size: 16px; }
   .grid, .craft-grid { grid-template-columns: 1fr; }
 }
+/* instagram */
+.footer { align-items: center; }
+.btn-ig { display: inline-flex; align-items: center; gap: 12px; padding: 12px 26px 12px 14px; border-radius: 999px; }
+.btn-ig i { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--cream); color: var(--rose); font-size: 21px; transition: transform .25s; }
+.btn-ig:hover i { transform: rotate(-12deg) scale(1.08); }
+.ig { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; color: var(--green); font-size: 24px; text-decoration: none; transition: background .2s, color .2s; }
+.ig:hover { background: var(--green); color: #fff; }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
