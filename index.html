@@ -106,19 +106,24 @@
     </section>
 
     <section id="contact" class="contact" aria-labelledby="contact-h">
-      <h2 id="contact-h">Got a piece with a story?</h2>
-      <p>Custom orders and collabs open soon. Tell us about your piece and we'll get back to you.</p>
-      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xjykepba" method="POST">
-        <div class="field-row">
-          <label for="cf-name">Name<input id="cf-name" name="name" type="text" autocomplete="name" required></label>
-          <label for="cf-email">Email<input id="cf-email" name="email" type="email" autocomplete="email" required></label>
+      <div class="contact-card">
+        <div class="contact-side">
+          <p class="eyebrow">Custom orders &amp; collabs</p>
+          <h2 id="contact-h">Got a piece with a story?</h2>
+          <p>Tell us what you've got and what you're dreaming up. We'll get back to you soon.</p>
+          <p class="contact-alt">Rather email? <a href="mailto:hello@birdgangstudio.com">hello@birdgangstudio.com</a></p>
         </div>
-        <label for="cf-msg">Tell us about your piece<textarea id="cf-msg" name="message" rows="5" required></textarea></label>
-        <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <button class="btn" type="submit">Send message</button>
-        <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
-      </form>
-      <p class="mail-addr">Or email us at hello@birdgangstudio.com</p>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xjykepba" method="POST">
+          <div class="field-row">
+            <div class="field"><label for="cf-name">Your name</label><input id="cf-name" name="name" type="text" autocomplete="name" placeholder="First and last" required></div>
+            <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required></div>
+          </div>
+          <div class="field"><label for="cf-msg">Tell us about your piece</label><textarea id="cf-msg" name="message" rows="5" placeholder="The jacket, the hoodie, the idea..." required></textarea></div>
+          <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn send" type="submit">Send message <span aria-hidden="true">&rarr;</span></button>
+          <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
 
   </main>
